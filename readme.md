@@ -1,4 +1,7 @@
 # Real-Time Call Transcription App
+
+[![CI](https://github.com/exponentlabshq/realtime-transcription-starter-kit-assemblyai/actions/workflows/ci.yml/badge.svg)](https://github.com/exponentlabshq/realtime-transcription-starter-kit-assemblyai/actions/workflows/ci.yml)
+
 ## Exponent Labs LLC
 
 A simple, up-to-date, real-time audio transcription application using AssemblyAI's streaming API with a modern web interface.
