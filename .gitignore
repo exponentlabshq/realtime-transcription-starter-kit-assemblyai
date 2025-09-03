@@ -1,0 +1,42 @@
+# Environment files
+.env
+.env.*
+*.env
+
+# Keep example env tracked
+!env.example
+
+# Python caches and build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Test/coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Tools caches
+.mypy_cache/
+.ruff_cache/
+
+# Editors/OS
+.DS_Store
+.idea/
+.vscode/
+
+# Node artifacts (if any)
+node_modules/
+
+# Misc
+*.log

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Call Transcription</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎙️ Real-Time Call Transcription</h1>
+            <p>Powered by AssemblyAI</p>
+        </header>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn btn-start">
+                <span class="icon">🎤</span>
+                Start Transcription
+            </button>
+            <button id="stopBtn" class="btn btn-stop" disabled>
+                <span class="icon">⏹️</span>
+                Stop Transcription
+            </button>
+        </div>
+        
+        <div class="status">
+            <div id="statusIndicator" class="status-indicator">
+                <span class="status-dot"></span>
+                <span id="statusText">Ready to start</span>
+            </div>
+        </div>
+        
+        <div class="transcription-container">
+            <div class="transcription-header">
+                <h3>Live Transcription</h3>
+                <button id="clearBtn" class="btn btn-clear">Clear</button>
+            </div>
+            <div id="transcription" class="transcription-content">
+                <p class="placeholder">Transcription will appear here...</p>
+            </div>
+        </div>
+        
+        <div class="session-info">
+            <div id="sessionInfo" class="session-info-content">
+                <p>Session ID: <span id="sessionId">-</span></p>
+                <p>Duration: <span id="duration">0s</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
