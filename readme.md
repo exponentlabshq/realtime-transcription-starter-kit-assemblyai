@@ -1,5 +1,7 @@
 # Real-Time Call Transcription App
 
+![App Screenshot](screenshot.png)
+
 ## Exponent Labs LLC
 
 A simple, up-to-date, real-time audio transcription application using AssemblyAI's streaming API with a modern web interface.
